@@ -1,0 +1,46 @@
+
+
+
+.item h4{
+    height: 60px;
+}
+
+
+
+.modal-content {
+    background-color: #000;
+}
+
+
+.modal-header .btn-close {
+    padding: 0;
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+}
+
+.my-input label {
+    color: #fff;
+}
+
+.my-input input, .my-input select, .my-input textarea {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 0;
+}
+
+.my-input option {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+}
+
+.my-input textarea {
+    height: 155px;
+}
