@@ -57,28 +57,31 @@
             
             <div class="home_form">
                 <div class="font-form">
-                    <input type="text"
+                    <input  class="contact-input"
+                            type="text"
                             placeholder="Full Name"
                             name="name" required> 
                     <i class="fa fa-user fa-lg"></i>
                 </div>  
 
                 <div class="font-form">
-                    <input type="text"
+                    <input  class="contact-input"
+                            type="text"
                             placeholder="Email Address"
                             name="email" required> 
                     <i class="fa fa-envelope fa-lg"></i>
                 </div>  
 
                 <div class="font-form">
-                    <input type="text"
+                    <input  class="contact-input"
+                            type="text"
                             placeholder="Phone Number"
                             name="phone" required> 
                     <i class="fa fa-phone fa-lg"></i>
                 </div>  
 
                 <div class="form-button">
-                    <button class="yellow-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Request a quote</button>
+                    <button class="yellow-button contact-submit" data-bs-toggle="" data-bs-target="#exampleModal">Request a quote</button>
                 </div>
             </div>
         </div>
@@ -369,22 +372,24 @@
             </div>
 
             <div class="contact_form">
-                <div class="font-form contact-form">
-                    <input type="text"
-                            placeholder="Name"
+                <div class="font-form subscribe-form">
+                    <input  class="subscribe-input"
+                            type="text"
+                            placeholder="Email Address"
                             name="name" required> 
                     <i class="fa fa-envelope fa-lg"></i>
                 </div>  
 
-                <div class="font-form contact-form">
-                    <input type="text"
-                            placeholder="Email Address"
+                <div class="font-form subscribe-form">
+                    <input  class="subscribe-input"
+                            type="text"
+                            placeholder="Phone number"
                             name="email" required> 
                     <i class="fa fa-phone fa-lg"></i>
                 </div>  
 
                 <div class="form-button contact-button">
-                    <button class="yellow-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe now</button>
+                    <button class="yellow-button subscribe-button" data-bs-toggle="" data-bs-target="#subscribeModal">Subscribe now</button>
                 </div>
             </div>
 
@@ -436,6 +441,19 @@
     </footer>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h4>Your message/link</h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-body">
