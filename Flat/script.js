@@ -62,4 +62,53 @@ const burger = document.querySelector('.burger-menu-btn'),
 /*____________________________________________________________________________________________*/
 
 
+/*_______________________________________CONTACT_____________________________________________________*/
 
+const contactForm = (input, button) => {
+
+const inputs = document.querySelectorAll(input),
+        submit = document.querySelector(button);
+
+
+submit.addEventListener('click', (event) =>{
+    event.preventDefault();
+    inputs.forEach(input => {
+        if (input.value === '') {
+            input.style.boxShadow = 'red 2px 2px 8px';
+            
+        } else {
+            input.style.boxShadow = 'none'
+            input.value = ''
+            submit.dataset.bsToggle=""
+        }
+    })})
+
+
+
+function checkInputs() {
+    const inputs = document.querySelectorAll('.contact-input');
+    let hasEmptyInput = false;
+  
+    inputs.forEach(input => {
+      if (input.value.trim() === '') {
+        hasEmptyInput = true;
+        return;
+      }
+    });
+  
+    if (!hasEmptyInput) {
+      submit.dataset.bsToggle="modal"
+    } 
+  }
+  inputs.forEach(input => {
+    input.addEventListener('input', checkInputs);
+  });
+  
+  checkInputs();
+
+}
+
+contactForm('.contact-input', '.contact-submit');
+contactForm('.subscribe-input', '.subscribe-button');
+
+  /*____________________________________________________________________________________________*/
